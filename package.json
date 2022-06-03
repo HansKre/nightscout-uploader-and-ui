@@ -1,6 +1,6 @@
 {
   "name": "uploader-and-ui",
-  "version": "0.1-beta",
+  "version": "0.1.0",
   "scripts": {
     "start-uploader": "node uploader.js",
     "start": "node lib/server/server.js",
