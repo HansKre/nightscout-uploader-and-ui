@@ -11,182 +11,182 @@
     }
   },
   "env": {
-    "UPLOADER_LINK_UP_USERNAME": {
+    "LINK_UP_USERNAME": {
       "description": "Your LibreLinkUp (LibreView) username/email address",
       "value": "",
       "required": true
     },
-    "UPLOADER_LINK_UP_PASSWORD": {
+    "LINK_UP_PASSWORD": {
       "description": "Your LibreLinkUp (LibreView)",
       "value": "",
       "required": true
     },
-    "UPLOADER_NIGHTSCOUT_URL": {
+    "NIGHTSCOUT_URL": {
       "description": "Your Nightscout URL",
       "value": "",
       "required": true
     },
-    "UPLOADER_NIGHTSCOUT_API_TOKEN": {
+    "NIGHTSCOUT_API_TOKEN": {
       "description": "Your Nightscout API token",
       "value": "",
       "required": true
     },
-    "UPLOADER_LOG_LEVEL": {
+    "LOG_LEVEL": {
       "description": "The log-level to use.",
       "value": "info",
       "required": true
     },
-    "UPLOADER_LINK_UP_TIME_INTERVAL": {
+    "LINK_UP_TIME_INTERVAL": {
       "description": "The time interval (in minutes) in which the values should be retrieved from Libre Link Up",
       "value": "5",
       "required": true
     },
-    "UI_MONGODB_URI": {
+    "MONGODB_URI": {
       "description": "The MongoDB Connection String to connect to your MongoDB cluster. If you don't have this from MongoDB Atlas, please re-read installation instructions at http://nightscout.github.io/nightscout/new_user/ before continuing",
       "value": "",
       "required": true
     },
-    "UI_ALARM_HIGH": {
+    "ALARM_HIGH": {
       "description": "Default setting for new browser views, for the High alarm (triggered when BG crosses BG_TARGET_TOP). ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_ALARM_LOW": {
+    "ALARM_LOW": {
       "description": "Default setting for new browser views, for the Low alarm (triggered when BG crosses BG_TARGET_BOTTOM). ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_ALARM_TIMEAGO_URGENT": {
+    "ALARM_TIMEAGO_URGENT": {
       "description": "Default setting for new browser views, for an urgent alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_URGENT_MINS. ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_ALARM_TIMEAGO_URGENT_MINS": {
+    "ALARM_TIMEAGO_URGENT_MINS": {
       "description": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_URGENT alarm.",
       "value": "30",
       "required": false
     },
-    "UI_ALARM_TIMEAGO_WARN": {
+    "ALARM_TIMEAGO_WARN": {
       "description": "Default setting for new browser views, for a warning alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_WARN_MINS. ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_ALARM_TIMEAGO_WARN_MINS": {
+    "ALARM_TIMEAGO_WARN_MINS": {
       "description": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_WARN alarm.",
       "value": "15",
       "required": false
     },
-    "UI_ALARM_TYPES": {
+    "ALARM_TYPES": {
       "description": "'simple' and/or 'predict'. Simple alarms trigger when BG crosses the various thresholds set below. Predict alarms use a formula that forecasts where the BG is going based on its trend. You will *not* get warnings when crossing the BG thresholds set below when using the predict type.",
       "value": "simple",
       "required": false
     },
-    "UI_ALARM_URGENT_HIGH": {
+    "ALARM_URGENT_HIGH": {
       "description": "Default setting for new browser views, for the Urgent High alarm (triggered when BG crosses BG_HIGH). ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_ALARM_URGENT_LOW": {
+    "ALARM_URGENT_LOW": {
       "description": "Default setting for new browser views, for the Urgent Low alarm (triggered when BG crosses BG_LOW). ('on' or 'off')",
       "value": "on",
       "required": false
     },
-    "UI_API_SECRET": {
+    "API_SECRET": {
       "description": "A passphrase that must be at least 12 characters long. Avoid 'special' characters, which can cause problems in some cases.",
       "value": "",
       "required": true
     },
-    "UI_BG_HIGH": {
+    "BG_HIGH": {
       "description": "Urgent High BG threshold, triggers the ALARM_URGENT_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
       "value": "260",
       "required": false
     },
-    "UI_BG_LOW": {
+    "BG_LOW": {
       "description": "Urgent Low BG threshold, triggers the ALARM_URGENT_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
       "value": "55",
       "required": false
     },
-    "UI_BG_TARGET_BOTTOM": {
+    "BG_TARGET_BOTTOM": {
       "description": "Low BG threshold, triggers the ALARM_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
       "value": "80",
       "required": false
     },
-    "UI_BG_TARGET_TOP": {
+    "BG_TARGET_TOP": {
       "description": "High BG threshold, triggers the ALARM_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
       "value": "180",
       "required": false
     },
-    "UI_BOLUS_RENDER_OVER": {
+    "BOLUS_RENDER_OVER": {
       "description": "U value over which the bolus values are rendered on the chart if the 'x U and Over' option is selected.",
       "value": "1",
       "required": false
     },
-    "UI_BRIDGE_PASSWORD": {
+    "BRIDGE_PASSWORD": {
       "description": "Your Dexcom account password, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
       "value": "",
       "required": false
     },
-    "UI_BRIDGE_SERVER": {
+    "BRIDGE_SERVER": {
       "description": "If you are bridging from the Dexcom Share service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
       "value": "US",
       "required": false
     },
-    "UI_BRIDGE_USER_NAME": {
+    "BRIDGE_USER_NAME": {
       "description": "Your Dexcom account username, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
       "value": "",
       "required": false
     },
-    "UI_CUSTOM_TITLE": {
+    "CUSTOM_TITLE": {
       "description": "The display name for the Nightscout site. Appears in the upper left of the main view. Often set to the name of the CGM wearer.",
       "value": "",
       "required": false
     },
-    "UI_DISPLAY_UNITS": {
+    "DISPLAY_UNITS": {
       "description": "Preferred BG units for the site: 'mg/dl' or 'mmol/L' (or just 'mmol').",
       "value": "mg/dl",
       "required": true
     },
-    "UI_ENABLE": {
+    "ENABLE": {
       "description": "Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.",
       "value": "careportal basal dbsize",
       "required": false
     },
-    "UI_MMCONNECT_USER_NAME": {
+    "MMCONNECT_USER_NAME": {
       "description": "Your CareLink account username, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
       "value": "",
       "required": false
     },
-    "UI_MMCONNECT_PASSWORD": {
+    "MMCONNECT_PASSWORD": {
       "description": "Your CareLink account password, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
       "value": "",
       "required": false
     },
-    "UI_MMCONNECT_SERVER": {
+    "MMCONNECT_SERVER": {
       "description": "If you are bridging from the CareLink service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
       "value": "US",
       "required": false
     },
-    "UI_NIGHT_MODE": {
+    "NIGHT_MODE": {
       "description": "Default setting for new browser views, for whether Night Mode should be enabled. ('on' or 'off')",
       "value": "off",
       "required": false
     },
-    "UI_SHOW_PLUGINS": {
+    "SHOW_PLUGINS": {
       "description": "Default setting for whether or not these plugins are checked (active) by default, not merely enabled. Include plugins here as in the ENABLE line; space-separated and lower-case.",
       "value": "careportal dbsize",
       "required": false
     },
-    "UI_SHOW_RAWBG": {
+    "SHOW_RAWBG": {
       "description": "Default setting for new browser views, for the display of raw CGM data (if available). ('always', 'never', or 'noise')",
       "value": "never",
       "required": false
     },
-    "UI_THEME": {
+    "THEME": {
       "description": "Default setting for new browser views, for the color theme of the CGM graph. ('default', 'colors', or 'colorblindfriendly')",
       "value": "colors",
       "required": false
     },
-    "UI_TIME_FORMAT": {
+    "TIME_FORMAT": {
       "description": "Default setting for new browser views, for the time mode. ('12' or '24')",
       "value": "12",
       "required": false
