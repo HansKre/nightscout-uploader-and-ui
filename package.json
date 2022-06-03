@@ -1,31 +1,8 @@
 {
-  "name": "nightscout",
-  "version": "14.2.5",
-  "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
-  "license": "AGPL-3.0",
-  "author": "Nightscout Team",
-  "homepage": "http://nightscout.github.io/",
-  "keywords": [
-    "diabetes",
-    "continuous glucose management",
-    "cgm in the cloud",
-    "cgm",
-    "dexcom"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nightscout/cgm-remote-monitor.git"
-  },
-  "contributors": [
-    {
-      "name": "Nightscout Team",
-      "url": "https://github.com/nightscout/cgm-remote-monitor/graphs/contributors"
-    }
-  ],
-  "bugs": {
-    "url": "https://github.com/nightscout/cgm-remote-monitor/issues"
-  },
+  "name": "uploader-and-ui",
+  "version": "0.1-beta",
   "scripts": {
+    "start-uploader": "node uploader.js",
     "start": "node lib/server/server.js",
     "test": "env-cmd -f ./my.test.env mocha --require ./tests/hooks.js -exit ./tests/*.test.js",
     "test-single": "env-cmd -f ./my.test.env mocha --require ./tests/hooks.js --exit ./tests/$TEST.test.js",
@@ -42,7 +19,19 @@
     "prod": "env-cmd -f ./my.prod.env node lib/server/server.js 0.0.0.0",
     "lint": "eslint lib"
   },
-  "main": "lib/server/server.js",
+  "keywords": [
+    "nightscout",
+    "cgm",
+    "diabetes",
+    "blood",
+    "sugar",
+    "freestyle",
+    "libre",
+    "librelink",
+    "librelink",
+    "up",
+    "uploader"
+  ],
   "nodemonConfig": {
     "ignore": [
       "tests/*",
@@ -69,6 +58,9 @@
     "npm": "^6.14.6"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "node-cron": "^3.0.0",
+    "winston": "^3.7.2",
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.12.11",
     "acorn": "^8.0.5",
