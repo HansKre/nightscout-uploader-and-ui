@@ -1,2 +1,2 @@
 web: node lib/server/server.js
-worker: npm start-uploader
+worker: npm run start-uploader
